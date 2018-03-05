@@ -18,7 +18,7 @@ devtools::install_github("rcoueron/mypkgr")
 [![Travis-CI Build Status](https://travis-ci.org/rcoueron/mypkgr.svg?branch=master)](https://travis-ci.org/rcoueron/mypkgr)
 ```
 
-Example
+Example :
 -------
 
 This is a basic example which shows you how to solve a common problem:
