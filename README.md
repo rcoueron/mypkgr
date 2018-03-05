@@ -1,4 +1,5 @@
 
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 mypkgr
 ======
@@ -13,6 +14,8 @@ You can install mypkgr from github with:
 ``` r
 # install.packages("devtools")
 devtools::install_github("rcoueron/mypkgr")
+
+[![Travis-CI Build Status](https://travis-ci.org/rcoueron/mypkgr.svg?branch=master)](https://travis-ci.org/rcoueron/mypkgr)
 ```
 
 Example
