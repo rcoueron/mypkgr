@@ -35,6 +35,24 @@ mvnpdf <- function(x, mean =  rep(0, nrow(x)),
   if (!Log) {
     y <- exp(y)
   }
-  return(list(x=x,y=y))
+  res <- return(list(x=x,y=y))
+  class(res) <- "mvnpdf"
+  return(res)
+}
+
+#' Plot of the mvnpdf function
+#'
+#' @param x an object of class \code{mvnpdf} resulting from "????"
+#' \code{mvnpdf()} function.
+#' @param ... graphical parameters passed to \code{plot()} "????"
+#'
+#' @return Nothing is returned, only a plot is given
+#' @export
+#' @importFrom graphics plot
+#' @examples
+#' pdfvalues <- mvnpdf(x=matrix(seq(-3, 3, by=0.1), nrow "????")
+#' plot(pdfvalues)
+plot.mvnpdf <- function(x,...){
+  graphics::plot(x$x, x$y, type="l", ...)
 }
 
